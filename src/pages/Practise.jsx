@@ -4,7 +4,7 @@ import { useState } from 'react';
 
 const Practise = () => {
 
-    const [nutrient, setNutrient] = useState([]);
+    const [nutrient, setNutrient] = useState({});
 
     const findNutrients = async () => {
         const api = await fetch(`https://api.spoonacular.com/recipes/findByNutrients?apiKey=${process.env.REACT_APP_API_KEY}&minCarbs=10`);
